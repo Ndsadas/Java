@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    background-color: #222222;
+    height: 74px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contIcon,
+.extIconWrap {
+    display: none;
+}
+
+.groupIcon {
+    font-size: 44px;
+}
+
+.searchIcon {
+    font-size: 26px;
+    margin-left: 41px;
+}
+
+.lineIcon {
+    font-size: 32px;
+}
+
+@media (min-width: 768px) {
+
+    .contIcon,
+    .extIconWrap {
+        display: inline;
+    }
+
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.contIcon {
+    margin-left: 25px;
+    margin-right: 42px;
+}
+
+.extIconWrap {
+    position: relative;
+}
+
+.extIconWrap span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #F15D7F;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -10px;
+    top: -22px;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+}
+
+.topInfo {
+    min-height: 363px;
+    position: relative;
+}
+
+.topWrap {
+    min-height: inherit;
+}
+
+@media (min-width: 768px) {
+    .topWrap {
+        display: flex;
+    }
+
+    .topWrap>div {
+        width: 50%;
+    }
+}
+
+.leftInfo {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .leftInfo {
+        display: block;
+    }
+}
+
+.rightInfo {
+    background: #F1E4E6;
+    height: 375px;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftInfo {
+    width: 100%;
+}
+
+@media (min-width: 1600px) {
+    .rightInfo {
+        justify-content: flex-start;
+    }
+
+    .brandWrap {
+        margin-left: 64px;
+    }
+}
+
+@media (min-width: 768px) {
+    .brandWrap {
+        height: 78px;
+    }
+}
+
+.brandWrap {
+    border-left: 12px solid #F16D7F;
+    padding-left: 15px;
+    height: 61px;
+}
+
+.brandWrap div:first-child {
+    font-weight: 900;
+    font-size: 38px;
+    color: #222222;
+    line-height: 34px;
+    margin-top: 3px;
+}
+
+.brandWrap div:last-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.brandWrap span {
+    color: #F16D7F;
+}
+
+.brandDark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+.menu {
+    width: 232px;
+    height: inherit;
+    background: white;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 24px;
+    box-sizing: border-box;
+    position: relative;
+    max-height: inherit;
+    overflow: auto;
+}
+
+.menuClose {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.menuTitle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.menuHeader {
+    font-size: 14px;
+    line-height: 33px;
+    color: #f16d7f;
+}
+
+.menuUnit a {
+    display: block;
+    font-size: 14px;
+    line-height: 33px;
+    color: #6f6e6e;
+    text-decoration: none;
+    margin-left: 21px;
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 247px) 111px;
+    row-gap: 32px;
+    padding: 64px 16px;
+}
+
+@media (min-width: 768px) {
+    .offers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+    }
+
+    .offerAccesories {
+        grid-column: 1/-1;
+    }
+}
+
+.offers>div {
+    position: relative;
+}
+
+.offers img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.offerTitle {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.offerTitleBottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.offerAccesories {
+    object-fit: cover;
+}
